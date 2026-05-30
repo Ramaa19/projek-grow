@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+  <title>KadoKita — Kirim Kado Virtual Gratis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">Kado<span>Kita</span></a>
+      <ul class="nav-links">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#jenis">Jenis Kado</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <button class="btn-nav" id="btnBuat">🎁 Buat Kado</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#tentang">Tentang</a>
+      <a href="#jenis">Jenis Kado</a>
+      <a href="#faq">FAQ</a>
+      <button class="btn-nav" id="btnBuatMobile">🎁 Buat Kado</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-badge">✨ Gratis Selamanya</span>
+      <h1 class="hero-title">
+        Kirim <em>Kado Virtual</em><br />yang Menyentuh Hati
+      </h1>
+      <p class="hero-desc">
+        Beri kejutan untuk orang-orang tersayang dengan kado digital yang penuh kasih.
+        Mudah, gratis, dan tak terlupakan. 💌
+      </p>
+      <div class="hero-actions">
+        <button class="btn-primary" id="btnHero">🎁 Buat Kado Sekarang</button>
+        <a href="#jenis" class="btn-ghost">Lihat Jenis Kado ↓</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>Ayo Coba</strong><span>Untuk Orang Spesial</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>100%</strong><span>Gratis</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="gift-card floating" id="heroGiftCard">
+        <div class="gift-card-inner">
+          <div class="gift-ribbon"></div>
+          <div class="gift-emoji">🎁</div>
+          <p class="gift-card-text">Untuk: <strong>Seseorang Spesial</strong></p>
+          <p class="gift-card-msg">"Semoga harimu menyenangkan!"</p>
+        </div>
+      </div>
+      <div class="floating-emoji e1">🎉</div>
+      <div class="floating-emoji e2">💖</div>
+      <div class="floating-emoji e3">✨</div>
+      <div class="floating-emoji e4">🌟</div>
+    </div>
+  </header>
+
+  <!-- JENIS KADO -->
+  <section class="section" id="jenis">
+    <div class="section-inner">
+      <div class="section-label">Pilihan Kado</div>
+      <h2 class="section-title">Pilih Jenis Kado<br /><em>Favoritmu</em></h2>
+      <p class="section-sub">Dari kotak kejutan hingga surat cinta — ada kado untuk setiap momen.</p>
+
+      <div class="gift-grid">
+        <!-- Card 1 -->
+        <div class="gift-item" data-type="Kotak Kejutan">
+          <div class="gift-item-icon">🎁</div>
+          <h3>Kotak Kejutan</h3>
+          <p>Bungkus pesanmu dalam kotak yang penuh kejutan!</p>
+          <button class="btn-pilih">Pilih →</button>
+        </div>
+        <!-- Card 2 -->
+        <div class="gift-item featured" data-type="Surat Cinta">
+          <div class="gift-item-badge">Populer 🔥</div>
+          <div class="gift-item-icon">💌</div>
+          <h3>Surat Cinta</h3>
+          <p>Ungkapkan perasaanmu lewat surat digital yang romantis.</p>
+          <button class="btn-pilih">Pilih →</button>
+        </div>
+        <!-- Card 3 -->
+        <div class="gift-item" data-type="Selamat Ulang Tahun">
+          <div class="gift-item-icon">🎂</div>
+          <h3>Selamat Ulang Tahun</h3>
+          <p>Rayakan hari spesial mereka dengan kado ulang tahun digital.</p>
+          <button class="btn-pilih">Pilih →</button>
+        </div>
+        <!-- Card 4 -->
+        <div class="gift-item" data-type="Telur Kejutan">
+          <div class="gift-item-icon">🥚</div>
+          <h3>Telur Kejutan</h3>
+          <p>Sembunyikan pesan rahasiamu di dalam telur kejutan lucu.</p>
+          <button class="btn-pilih">Pilih →</button>
+        </div>
+        <!-- Card 5 -->
+        <div class="gift-item" data-type="Gelembung Plastik">
+          <div class="gift-item-icon">🫧</div>
+          <h3>Gelembung Plastik</h3>
+          <p>Pop! Pop! Kirim kesenangan dengan gelembung plastik interaktif.</p>
+          <button class="btn-pilih">Pilih →</button>
+        </div>
+        <!-- Card 6 -->
+        <div class="gift-item" data-type="Kartu Gores">
+          <div class="gift-item-icon">🪙</div>
+          <h3>Kartu Gores</h3>
+          <p>Sembunyikan pesan dengan kartu gores seru dan interaktif!</p>
+          <button class="btn-pilih">Pilih →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section class="section section-alt" id="tentang">
+    <div class="section-inner about-grid">
+      <div class="about-visual">
+        <div class="about-card-stack">
+          <div class="acard acard-1">💌 Surat Cinta Terkirim</div>
+          <div class="acard acard-2">🎂 Ulang Tahun Dirayakan</div>
+          <div class="acard acard-3">🎁 Kado Diterima</div>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-label">Tentang Kami</div>
+        <h2 class="section-title">Menyebarkan Cinta<br /><em>di Seluruh Dunia</em></h2>
+        <p>
+          KadoKita hadir untuk menjembatani jarak antara orang-orang yang saling menyayangi.
+          Dengan kado virtual kami, kamu bisa membuat orang tersayang merasa istimewa kapan saja,
+          di mana saja — tanpa perlu mengeluarkan biaya apapun. 🤎
+        </p>
+        <div class="about-features">
+          <div class="feat">✅ Gratis tanpa syarat</div>
+          <div class="feat">✅ Tidak perlu daftar</div>
+          <div class="feat">✅ Bisa kirim ke siapa saja</div>
+          <div class="feat">✅ Buat happy orang spesial anda</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARA KERJA -->
+  <section class="section" id="cara">
+    <div class="section-inner">
+      <div class="section-label">Mudah Banget!</div>
+      <h2 class="section-title">Hanya <em>3 Langkah</em></h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-icon">🎨</div>
+          <h3>Pilih Kado</h3>
+          <p>Pilih jenis kado yang ingin kamu buat dari berbagai pilihan menarik.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-icon">✍️</div>
+          <h3>Tulis Pesan</h3>
+          <p>Tambahkan pesan pribadi yang spesial untuk orang tersayang.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-icon">📤</div>
+          <h3>Kirim Link</h3>
+          <p>Bagikan link kado via WhatsApp, Instagram, atau chat apapun!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="section-inner faq-inner">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Pertanyaan yang<br /><em>Sering Ditanyakan</em></h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Apa itu Kado Virtual? <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Kado virtual adalah pesan digital yang dikirim dari satu orang ke orang lain melalui internet. Meskipun tidak bisa disentuh secara fisik, kado virtual yang terbaik mampu menyentuh hati penerimanya. ❤️</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Apakah KadoKita gratis? <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Ya! KadoKita sepenuhnya gratis untuk digunakan. Kamu bisa membuat dan mengirim kado virtual sebanyak apapun tanpa biaya. 🎉</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Apakah perlu daftar akun? <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Tidak perlu! Kamu bisa langsung membuat kado tanpa mendaftar. Namun jika ingin menyimpan riwayat kado yang pernah dikirim, kamu bisa membuat akun gratis. 😊</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Bagaimana cara mengirim kado? <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Setelah membuat kado, kamu akan mendapatkan link unik yang bisa dibagikan lewat WhatsApp, Instagram, email, atau platform apapun. Penerima cukup klik link tersebut untuk membuka kadonya! 🔗</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FOOTER -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2>Siap membuat seseorang<br /><em>tersenyum hari ini?</em></h2>
+      <p>Butuh kurang dari 2 menit. Gratis. Penuh cinta. 💖</p>
+      <button class="btn-primary btn-large" id="btnCta">🎁 Mulai Buat Kado</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">Kado<span>Kita</span></a>
+        <p>Menyebarkan cinta dan kebahagiaan<br />satu kado virtual pada satu waktu. 🤎</p>
+      </div>
+      <div class="footer-links">
+        <h4>Jenis Kado</h4>
+        <ul>
+          <li><a href="#">Kotak Kejutan</a></li>
+          <li><a href="#">Surat Cinta</a></li>
+          <li><a href="#">Selamat Ulang Tahun</a></li>
+          <li><a href="#">Telur Kejutan</a></li>
+          <li><a href="#">Gelembung Plastik</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Tentang</h4>
+        <ul>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+          <li><a href="#">Syarat & Ketentuan</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Media Sosial</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Telegram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 KadoKita — Dibuat dengan 🤎 untuk semua orang.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL BUAT KADO -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-step" id="step1">
+        <div class="modal-emoji">🎁</div>
+        <h2>Buat Kado Untuk Siapa?</h2>
+        <div class="modal-form">
+          <label>Nama Pengirim</label>
+          <input type="text" id="inputPengirim" placeholder="Nama kamu..." />
+          <label>Nama Penerima</label>
+          <input type="text" id="inputPenerima" placeholder="Nama orang tersayang..." />
+          <label>Jenis Kado</label>
+          <select id="selectJenis">
+            <option>Kotak Kejutan 🎁</option>
+            <option>Surat Cinta 💌</option>
+            <option>Selamat Ulang Tahun 🎂</option>
+            <option>Telur Kejutan 🥚</option>
+            <option>Gelembung Plastik 🫧</option>
+            <option>Kartu Gores 🪙</option>
+          </select>
+          <label>Pesan Spesial</label>
+          <textarea id="inputPesan" placeholder="Tulis pesanmu di sini... 💬" rows="4"></textarea>
+          <button class="btn-primary" id="btnLanjut">Lanjut →</button>
+        </div>
+      </div>
+      <div class="modal-step hidden" id="step2">
+        <div class="modal-emoji">🎉</div>
+        <h2>Kado Siap Dikirim!</h2>
+        <div class="preview-card" id="previewCard">
+          <div class="preview-type" id="previewType">🎁 Kotak Kejutan</div>
+          <div class="preview-to">Untuk: <strong id="previewPenerima"></strong></div>
+          <div class="preview-from">Dari: <strong id="previewPengirim"></strong></div>
+          <div class="preview-msg" id="previewPesan"></div>
+        </div>
+        <div class="share-box">
+          <label>Link Kado Kamu:</label>
+          <div class="share-link-row">
+            <input type="text" id="linkKado" readonly value="https://kadokita.id/kado/abc123" />
+            <button class="btn-copy" id="btnCopy">Salin</button>
+          </div>
+        </div>
+        <div class="share-buttons">
+          <button class="btn-share wa" id="btnWa">📱 WhatsApp</button>
+          <button class="btn-share ig" id="btnIg">📷 Instagram</button>
+        </div>
+        <button class="btn-ghost" id="btnBuatLagi">← Buat Kado Baru</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIF -->
+  <div class="toast" id="toast">✅ Link berhasil disalin!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
